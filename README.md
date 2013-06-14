@@ -21,7 +21,7 @@ The api key that is hard-coded in the script is mine, but feel free to sign up t
 
 # Demo
 
-    $ forgetlyrics bluepanda$ python forgetlyrics.py
+    $ python forgetlyrics.py
     Artist name contains:
     imagine
     Track title contains:
