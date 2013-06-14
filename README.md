@@ -3,6 +3,7 @@ ForgetLyrics
 
 Ever get tired of those lyrics websites full of ads? 
 We all do, which is why I wrote this small script that fetches lyrics in your terminal.
+Why ForgetLyrics? Because I can never remember these freaking lyrics, and with this app, I can now forget them for good and just read them. (Assuming there is a terminal within reach)
 
 # Installation
 
