@@ -2,6 +2,7 @@
 
 import requests
 import json 
+import sys
 
 apikey = "cd8462d8a900df627e954da096090907"
 root_url = "http://api.musixmatch.com/ws/1.1/"
