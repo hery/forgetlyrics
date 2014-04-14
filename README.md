@@ -16,11 +16,20 @@ Why ForgetLyrics? Because I can never remember these freaking lyrics, and with t
 
 The api key that is hard-coded in the script is mine, but feel free to sign up to musixmatch.com to get yours and replace it, as each API key has a limited number of calls.
 
+## System wide (optional step)
+For a system wide installation you have the give the execution permission for .py file:
+  ```chmod a+x forgetlyrics.py```
+
+Then, link it in the /usr/bin directory (you may need sudo):
+  ```ln -s /path/to/forgetlyrics.py /usr/bin/forgetlyrics```
+
 # Usage
 
     python forgetlyrics.py
+    or
+    python forgetlyrics.py 'artistName' 'songTitle'
 
-# Demo
+# Demo 1
 
     $ python forgetlyrics.py
     Artist name contains:
@@ -63,3 +72,28 @@ The api key that is hard-coded in the script is mine, but feel free to sign up t
     And the masquerade
     Will come calling out
     At the mess you made
+
+#Demo 2
+
+    python forgetlyrics.py creedence 'seen the rain'
+    Someone told me long ago there's a calm before the storm
+    I know, it's been comin' for some time
+    When it's over, so they say, it'll rain a sunny day
+    I know, shinin' down like water
+    
+    I wanna know, have you ever seen the rain?
+    I wanna know, have you ever seen the rain
+    Comin' down on a sunny day?
+    
+    Yesterday and days before, sun is cold and rain is hard
+    I know, been that way for all my time
+    'Til forever, on it goes through the circle, fast and slow
+    I know, it can't stop, I wonder
+    
+    I wanna know, have you ever seen the rain?
+    I wanna know, have you ever seen the rain
+    Comin' down on a sunny day?
+    
+    Yeah, I wanna know, have you ever seen the rain?
+    I wanna know, have you ever seen the rain
+    Comin' down on a sunny day?

@@ -2,6 +2,7 @@
 
 import requests
 import json 
+import sys
 
 apikey = "cd8462d8a900df627e954da096090907"
 root_url = "http://api.musixmatch.com/ws/1.1/"
@@ -23,6 +24,16 @@ def get_track_id_for_keywords_and_artists(keywords, artist):
   first_track_id = r.json()['message']['body']['track_list'][0]['track']['track_id']
   return first_track_id
 
+def get_artist_and_title(argv):
+  if len(argv) == 3:
+    artist = argv[1]
+    title = argv[2]
+  else:
+    artist = raw_input("Artist name contains:\n")
+    title = raw_input("Track title contains:\n")
+
+  return artist, title
+
 # Tests
 
 # test get_lyrics_for_track_id
@@ -35,8 +46,7 @@ def get_track_id_for_keywords_and_artists(keywords, artist):
 # print lyrics
 
 def main():
-  artist = raw_input("Artist name contains:\n")
-  title = raw_input("Track title contains:\n")
+  artist, title = get_artist_and_title(sys.argv)
   track_id = get_track_id_for_keywords_and_artists(title, artist)
   lyrics = get_lyrics_for_track_id(track_id)
   print lyrics
